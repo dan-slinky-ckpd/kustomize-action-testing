@@ -1,5 +1,9 @@
 name: Kustomize Action Testing
 
+on:
+  push:
+    branches: [ master ]
+
 jobs:
   build:
     name: testing kustomize action
