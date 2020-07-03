@@ -1,0 +1,19 @@
+name: Kustomize Action Testing
+
+jobs:
+  build:
+    name: testing kustomize action
+    runs-on: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Kustomize build
+      uses: dan-slinky-ckpd/kustomize-github-action@kustomize-action-testing
+      with:
+        kustomize_version: 3.6.1
+        kustomize_build_dir: .
+        kustomize_comment: false
+        kustomize_output_file: manifests.yaml
+        enable_alpha_plugins: false
+    - name: show manifests
+      run: |
+        cat manifests.yaml
