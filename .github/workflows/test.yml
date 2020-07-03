@@ -13,7 +13,7 @@ jobs:
     - name: Kustomize build
       uses: dan-slinky-ckpd/kustomize-github-action@kustomize_download_path
       with:
-        kustomize_version: 2.0.0
+        kustomize_version: 3.6.1
         kustomize_build_dir: .
         kustomize_comment: false
         kustomize_output_file: manifests.yaml
