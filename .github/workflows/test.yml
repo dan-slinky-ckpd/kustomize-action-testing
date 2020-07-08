@@ -13,10 +13,10 @@ jobs:
     - name: Kustomize build
       uses: dan-slinky-ckpd/kustomize-github-action@patch-1
       with:
-        kustomize_version: 3.6.1
-        kustomize_build_dir: .
+        kustomize_version: '3.6.1'
+        kustomize_build_dir: '.'
         kustomize_comment: false
-        kustomize_output_file: manifests.yaml
+        kustomize_output_file: 'manifests.yaml'
         enable_alpha_plugins: false
     - name: show manifests
       run: |
