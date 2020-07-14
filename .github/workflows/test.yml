@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Kustomize build
-      uses: dan-slinky-ckpd/kustomize-github-action@patch-1
+      uses: dan-slinky-ckpd/kustomize-github-action@22-regex-fix
       with:
-        kustomize_version: '3.6.1'
+        kustomize_version: '3.2.1'
         kustomize_build_dir: '.'
         kustomize_comment: false
         kustomize_output_file: 'manifests.yaml'
