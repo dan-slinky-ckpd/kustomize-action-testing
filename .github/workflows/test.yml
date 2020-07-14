@@ -13,7 +13,7 @@ jobs:
     - name: Kustomize build
       uses: dan-slinky-ckpd/kustomize-github-action@22-regex-fix
       with:
-        kustomize_version: '3.2.3'
+        kustomize_version: '3.8.0'
         kustomize_build_dir: '.'
         kustomize_comment: false
         kustomize_output_file: 'manifests.yaml'
